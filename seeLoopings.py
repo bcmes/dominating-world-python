@@ -27,3 +27,21 @@ while number < 5:
     # break
 else:
     print('terminou com sucesso.')
+
+# FOR
+texto = 'bla bala'
+for char in texto:
+    print(char)
+
+# obtendo um interator do objeto
+print('interador:')
+casa='Londres'
+interador=iter(casa)
+print(next(interador))
+print(next(interador))
+
+# FOR ELSE
+for char in texto:
+    print(char)
+else:
+    print('for concluido com sucesso')

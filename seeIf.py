@@ -26,3 +26,8 @@ nomeQueFicouMuitoGrande3 = "x"
 if nomeQueFicouMuitoGrande2 == nomeQueFicouMuitoGrande \
     and nomeQueFicouMuitoGrande3 == nomeQueFicouMuitoGrande:
     print('Funciona !')
+
+# Condicao ternaria
+condicao = False
+valor = 'valor1' if condicao else 'valor2'
+print(valor)
