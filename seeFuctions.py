@@ -1,6 +1,7 @@
 # coisas definidas dentro da funcao respeitam o escopo da funcao.
 # posso definir funcao dentro de funcao
 # posso receber como parametro de uma funcao outra funcao
+# uma funcao pode retornar outra funcao
 
 variavelExterna = 0
 
@@ -44,6 +45,12 @@ def funcao2(): # retorna String
 def funcao3(*args): #os elementos estao em uma tupla
     print(sum(args))
 
+# funcao que retorna outra funcao
+def oneFunction(cumprimentos):
+    def interFunction(nome):
+        return f'{cumprimentos} {nome}'
+    return interFunction
+
 
 
 # chamando funcoes
@@ -61,3 +68,7 @@ print(f'Variavel externa: {variavelExterna}')
 
 print(f'analisando retorno da funcao: {funcao1()}')
 funcao3(1,2,3,4,4,5)
+
+interFunction = oneFunction('Boa tarde')
+result = interFunction('Bruno')
+print(result)

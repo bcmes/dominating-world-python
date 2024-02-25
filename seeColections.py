@@ -44,3 +44,37 @@ for k, v in myEnumX:
 # modo simples de imprimir uma colecao
 myCollection = ['1','2','s',1,3,2]
 print(*myCollection)
+
+# dictionaries, semelhante a map/objeto
+meuDicionario = {'chave1': 'valor1','chave2': 'valor2'}
+meuDicionario2 = dict(chave1='valor1',chave2='valor2')
+pessoa = {
+    'nome': 'Bruno',
+    'sexo': 'M',
+    'idade': 12,
+    'contatos': [
+        {
+            'celular': 123456,
+            'email': 'email@email.com'
+        }
+    ]
+}
+print(meuDicionario)
+print(meuDicionario2)
+print(pessoa)
+print(pessoa['contatos'][0]['celular'])
+# em um for com dicionarios, é retornado as chaves
+for p in pessoa:
+    print(p)
+
+# pode-se definir dinamicamente os elementos de um dicionario
+carros={}
+carros['modelo'] = 'BMW'
+print(carros)
+# pode-se deletar dinamicamente um item do dicionario
+del carros['modelo']
+print(carros)
+# consultando elemento de forma segura (nao retorna erro se a key nao existir)
+carros.get('modelo') # retorno default None se nao existir
+carros.setdefault('modelo', 'default') # quando for chamado, se nao for definido, retorna um valor default
+print(carros['modelo'])
