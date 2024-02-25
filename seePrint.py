@@ -18,3 +18,9 @@ print('Bruno o  "Silva"')
 # expressoes
 print(1+1)
 print("a"+"b")
+
+# quando descricao igual a variavel
+# valorx=1
+# valory=2
+# print(f'{valorx=} {valory=}')
+# nessa versao nao funciona
