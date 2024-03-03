@@ -78,3 +78,33 @@ print(carros)
 carros.get('modelo') # retorno default None se nao existir
 carros.setdefault('modelo', 'default') # quando for chamado, se nao for definido, retorna um valor default
 print(carros['modelo'])
+
+#desenpacotamento de dicionarios so retorna as chaves
+pessoaX1 = {
+    'nome': 'Aline',
+    'sobreNome': 'Felix',
+}
+a, b = pessoaX1
+print(f'desempacotando {a}, {b}')
+
+# tuplas
+tupla = (('nome', 'novo valor'), ('idade', 30))
+print(tupla)
+
+# set: so aceita elementos imutaveis
+set1 = {'Bruno', 1,2,3}
+print(set1)
+# uniao de sets
+s1 = {1,2,3}
+s2 = {3,4,1}
+s3 = s1|s2
+print(s3)
+# intersecao de sets
+s3 = s1&s2
+print(s3)
+# diferenca de sets
+s3 = s1-s2
+print(s3)
+# diferenca simetrica de sets
+s3 = s1^s2
+print(s3)
